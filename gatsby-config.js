@@ -11,8 +11,37 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/static/assets`, // Netlify to fetch images from static folder.
+        name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`, // Netlify to read md files & to check GraphQl Query.
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+    `gatsby-transformer-remark`, // Netlify to interpret md files.
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-plugin-netlify-cms-paths`,
+            options: {
+              // Path to your Netlify CMS config file
+              cmsConfig: `/static/admin/config.yml`,
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -32,6 +61,6 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+     `gatsby-plugin-offline`,
   ],
 }

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+.logo {
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.nav_item_style {
+    font: bold 11px/1.4 'Open Sans', arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_login_style {
+    font: bold 11px/1.4 'Open Sans', arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_item_style:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav_item_style:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav_item_style:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.actStyl{
+    border-bottom: "1px solid #fff";
+}
+
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+.act_styl {
+    text-decoration: underline;
+    color: "red";
+}
+
+/** Big Menu Display **/
+
+.big_menu {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #262626;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 300px;
+    line-height: 40px;
+    color: rgb(172, 172, 228);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.close {
+    text-align: left;
+    padding: 10px;
+    color: rgb(172, 172, 228);
+}
+
+.close:hover {
+    color: #9a9a9c;
+}
+
+.big_menu>.cnt {
+    position: relative;
+    top: 5em;
+}
+
+.big_menu>.cnt>div {
+    margin: 5px;
+}
+
+.big_menu>.cnt>div:hover {
+    color: rgb(172, 172, 228);
+}
+
+.big_menu>.cnt>.tag {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #f7f7f7;
+}
+
+.app-bar {
+    display: none;
+}
+
+.tag {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #f7f7f7;
+}
+
+/** EOF Big Menu **/

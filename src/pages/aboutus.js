@@ -1,15 +1,13 @@
 import React from "react"
-import Home from "../components/Home/home"
+import Meetteam from "../components/Team/meetteam"
 import Layout from "../components/layout"
 
-const IndexPage = () => {
+export default function aboutus() {
   return (
     <>
       <Layout>
-        <Home />
+        <Meetteam />
       </Layout>
     </>
   )
 }
-
-export default IndexPage

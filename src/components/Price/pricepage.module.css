@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+.first_title {
+    font-style: "Poppins";
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    color: rgb(243, 237, 237);
+}
+
+.second_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(40, 40, 40);
+}
+
+.third_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50.4px;
+    color: rgb(49, 79, 247);
+}
+
+.price_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(40, 40, 40);
+}
+
+.fourth_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    color: rgb(40, 40, 40);
+}
+
+.desc {
+    font-style: "Rubik";
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 27px;
+    padding: 4rem;
+    color: rgb(243, 237, 237);
+}
+
+.bt_styl {
+    border-radius: 10px 100px / 120px;
+}
+
+.bt_styl1 {
+    border-radius: 50% 20% / 10% 40%;
+}
+
+.bt_styl:hover, .bt_styl1:hover {
+    background-color: white;
+    color: #0069D9;
+}
+

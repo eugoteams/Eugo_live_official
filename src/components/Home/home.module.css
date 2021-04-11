@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.eu {
+  font-style: "Poppins, Roboto";
+  font-size: clamp(3.8vh, 5.5vw, 8vh);
+  font-weight: 600;
+  line-height: 63px;
+  color: #f48c06;
+}
+
+.eu-sub>.test::before {
+  content: "";
+  color: #6b61f5;
+  animation: profile 5s infinite;
+}
+
+.eudesc {
+  font-style: "Roboto, Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+  color: rgb(115, 122, 123);
+}
+
+
+.textanim::before {
+  content: "";
+  font-size: clamp(2vh, 3vw, 8vh);
+  color: #6b61f5;
+  animation: textanimprofile 5s infinite;
+}
+
+.border {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  margin: 6px;
+  background-color: rgb(51, 51, 51);
+}
+
+.title {
+  font-style: "Poppins, sans-serif";
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  color: rgb(51, 51, 51);
+}
+
+.desc {
+  font-style: "Rubik, sans-serif";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30.6px;
+  color: rgb(73, 73, 73);
+}
+
+
+
+.samp{
+  color: black;
+}
+
+.bt_styl {
+  border-radius: 10px 100px / 120px;
+  background-color: #535DC5;
+}
+
+.bt_styl1 {
+  border-radius: 50% 20% / 10% 40%;
+  background-color: #535DC5;
+}
+
+.bt_styl:hover, .bt_styl1:hover {
+  background-color: white;
+  color: #0069D9;
+}
+
+/** Floating animation **/
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Animation */
+
+@keyframes textanimprofile {
+  0% {
+    content: "France";
+  }
+  50% {
+    content: "Germany";
+  }
+  100% {
+    content: "Italy";
+  }
+}

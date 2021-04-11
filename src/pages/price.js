@@ -1,15 +1,13 @@
 import React from "react"
-import Home from "../components/Home/home"
 import Layout from "../components/layout"
+import Pricepage from "../components/Price/pricepage"
 
-const IndexPage = () => {
+export default function price() {
   return (
     <>
       <Layout>
-        <Home />
+        <Pricepage />
       </Layout>
     </>
   )
 }
-
-export default IndexPage
